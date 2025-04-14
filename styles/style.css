@@ -1,0 +1,272 @@
+@import "reset.css";
+
+
+
+/* general style */
+body{
+    direction:rtl;
+    background-color: #e8e9eb;
+    font-family: tahoma;
+}
+
+.container{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.clear-fix{
+    clear:both;
+}
+
+/* header */
+#header{
+    margin-top: 20px;
+}
+
+
+#header #logo img{
+    width: 90px;
+    
+}
+
+#header #titles{
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    right: 10px;
+}
+
+#header #titles h1{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#header #titles h2{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#header .users{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#header .users .button{
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#header .users .login{
+    background-color: #1565c0;
+    
+    
+}
+
+#header .users .login:hover{
+    background-color: #0d47a1;
+}
+
+#header .users .register{
+    background-color: #2e7d32;
+}
+
+#header .users .register:hover{
+    background-color: #1b5e20;
+}
+
+/* navigation */
+#navigation{
+    background-color: #263238;
+    margin-top: 20px;
+}
+
+#navigation ul li{
+    display: inline-block;
+}
+
+#navigation ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 20px;
+    display: inline-block;
+}
+
+#navigation ul li a:hover{
+    background-color:hwb(201 25% 69%) ;
+    transition: 0.15s;
+}
+
+/* content */
+#content{
+    width: 800px;
+    padding: 10px;
+    float: right;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+
+#content .post-item{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 15px;
+
+}
+
+
+#content .post-item:first-child{
+    margin-top: 0;
+}
+
+
+.post-item .post-img{
+    margin: 10px;
+    float: right;
+}
+
+.post-item .post-img img{
+    width: 300px;
+    height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.post-item .post-title{
+    font-weight: bold;
+    border-bottom: 2px dashed #ccc;
+    font-size: 27px;
+    padding: 15px;
+}
+
+.post-item .post-content{
+    height: 230px;
+    padding: 5px;
+    overflow: hidden;
+    line-height: 25px;
+}
+
+.post-item .post-data{
+    background-color: #f0f0f0;
+    border-top: 2px solid #ccc;
+    padding: 10px;
+    position: relative;
+
+}
+
+
+.post-item .read-more{
+    background-color: black;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    left: 5px;
+    bottom: 7px;
+}
+
+
+.post-item .read-more:hover{
+    background-color: #263238;
+}
+
+
+
+/* sidebar */
+#sidebar{
+    width: 295px;
+    padding: 10px;
+    float: left;
+    box-sizing: border-box;
+}
+
+#sidebar .sidebar-item{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 10px;
+    
+}
+
+
+#sidebar .sidebar-item .sidebar-header{
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+}
+
+#sidebar .sidebar-item .sidebar-content{
+    padding: 10px;
+}
+
+
+#sidebar .categories ul li a{
+    text-decoration: none;
+    color: #212121;
+    margin-top: 10px;
+    display: inline-block;
+    border-right: 2px solid #212121;
+    padding-right: 5px;
+}
+
+#sidebar .categories ul li a:hover{
+    border-right: 4px solid #1565c0;
+    margin-right: 5px;
+    transition: 0.25s;
+}
+
+
+#sidebar .newsletter{
+    text-align: center;
+
+}
+
+#sidebar .newsletter p{
+    font-size: 16px;
+    line-height: 23px;
+}
+
+#sidebar .newsletter .email-input{
+    padding: 5px;
+    width: 90%;
+    margin-top: 10px;
+}
+
+
+#sidebar .newsletter .submit-btn{
+    background-color: #2E7D32;
+    margin-top: 10px;
+    border: none;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+
+#sidebar .newsletter .sub-btn:hover {
+    background-color: #266429;
+    cursor: pointer;
+  }
+
+/* footer */
+#footer{
+    padding: 20px;
+    background-color: #212121;
+    margin-top: 20px;
+}
+
+#footer p{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
